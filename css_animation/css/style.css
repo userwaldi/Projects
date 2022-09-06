@@ -1,0 +1,60 @@
+body {
+	padding: 50px;
+	background-color: rgb(37, 36, 36);
+}
+
+.content__circle {
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	border-radius: 50%;
+	position: relative;
+	left: 0;
+
+	animation: white-circle 3s linear infinite 0s alternate forwards, red-circle 3s linear infinite 0s alternate forwards;
+	/*
+	animation-name: white-circle;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 5s;
+	animation-direction: alternate;
+	animation-play-state: running;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	*/
+}
+
+/*
+.content:hover .content__circle {
+	animation-name: none;
+}
+*/
+
+@keyframes white-circle {
+	0% {
+		left: 0;
+	}
+
+	50% {
+		width: 100px;
+		height: 100px;
+	}
+
+	100% {
+		left: 1000px;
+	}
+}
+
+@keyframes red-circle {
+	0% {
+		background-color: #fff;
+	}
+
+	50% {
+		background-color: rgb(138, 0, 0);
+	}
+
+	100% {
+		background-color: #fff;
+	}
+}
